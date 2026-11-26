@@ -6,62 +6,73 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<header class="parent"> 
-        <div class="child"> 
-            <p> Video Games </p>
-            <img class="bouncy" src="images/gamepad-solid-full.svg" alt="controller"> 
+<form action="">
+        <label for="">Username</label>
+        <input type="text" id="username" placeholder="Username..." required minlength="3" max="15">
+
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value="geo">Georgia</option>
+            <option value="usa">USA</option>
+            <option value="ger">Germany</option>
+        </select>
+        <!-- <textarea name="" id=""></textarea> -->
+
+    </form>
+
+    <form action="">
+
+        <div>
+            <label for="text">Name</label>
+            <input type="text" required minlength="3" max="30">
         </div>
-    </header>
-<main>  
-    <section class="arrow">
-        <div class="spin">
-            <img class="arrowspin" src="images/arrow-rotate-left-solid-full (1).svg" alt="arrow">
-            <i class="fa-solid fa-arrow-rotate-left fa-spin"></i>
-        </div> 
-    </section>
-    <section class="bugs">
-        <div class="bounce">
-            <img class="bugsbounce" src="images/bugs-solid-full.svg" alt="bugs">
-            <i class="fa-solid fa-arrow-rotate-left fa-spin"></i>
-        </div> 
-    </section>
-    
-    <section class="card-cont"> 
-        <h1> <span> Games </span></h1>
-        <article class="card"> 
-            <img class="card_image" src="images/metro2033.jpg" alt="metro2033"> 
-            <div class="card_content">
-                <h2 class="card_title">Metro 2033</h2>
-                <p class="card_desc">Survive in the dark tunnels of the Moscow metro after a nuclear war. </p>
-                <button class="card_button">See More</button>
-            </div>
-        </article>
-            <article class="card card2"> 
-            <img class="card_image" src="images/outlast.jpg" alt="outlast"> 
-            <div class="card_content">
-                <h2 class="card_title">Outlast</h2>
-                <p class="card_desc">You are a journalist inside a horror asylum. You cannot fight, only hide and run.</p>
-                <button class="card_button">See More</button>
-            </div>
-        </article>
-            <article class="card"> 
-            <img class="card_image" src="images/images.jpg" alt="alice"> 
-            <div class="card_content">
-                <h2 class="card_title">Alice: Madness Returns</h2>
-                <p class="card_desc">A dark, twisted version of Wonderland with creative platforming and combat.</p>
-                <button class="card_button">See More</button>
-            </div>
-        </article>
-            <article class="card"> 
-            <img class="card_image" src="images/lol.jpg" alt="lol"> 
-            <div class="card_content">
-                <h2 class="card_title">League of Legends</h2>
-                <p class="card_desc">A team strategy game where two teams of five fight to destroy the enemy base.</p>
-                <button class="card_button">See More</button>
-            </div>
-        </article>
-    </section>
-</main>
+         <div>
+            <label for="email">Email</label>
+            <input type="email" id="email">
+            <!-- <p class="incorrect" id="incorrect"> Type correct email address, for example name@mail.com</p> -->
+        </div>
+         <div>
+            <label for="tel">Phone Number</label>
+            <input type="tel" id="tel">
+        </div>
+         <div>
+            <label for="birthday">Birth Date</label>
+            <input type="date" min="1950-01-01" max="2007-01-01">
+        </div>
+        <!-- <div>
+            <label for="">checkbox</label>
+            <input type="checkbox" id="checkbox">
+        </div> -->
+        <div class="gender">
+             <div>
+                <label for="">Male</label>
+                <input type="radio" name="gender">
+             </div>
+             <div>
+                <label for="">Female</label>
+                <input type="radio" name="gender">
+             </div>
+             <div>
+                <label for="">Prefer Not to Say</label>
+                <input type="radio" name="gender">
+             </div>
+            
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" required pattern="5[0-9]{8}">
+        </div>
+        <div>
+            <label for="">Slider</label>
+            <input type="range" id="range">
+        </div>
+        <div>
+            <label for="">file</label>
+            <input type="file" id="file">
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
 
 
 </body>
